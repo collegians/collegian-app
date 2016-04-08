@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		919A62691CB731A90047E83E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A62681CB731A90047E83E /* AppDelegate.swift */; };
+		919A626B1CB731A90047E83E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A626A1CB731A90047E83E /* MasterViewController.swift */; };
+		919A626D1CB731A90047E83E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A626C1CB731A90047E83E /* DetailViewController.swift */; };
+		919A62701CB731A90047E83E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919A626E1CB731A90047E83E /* Main.storyboard */; };
+		919A62721CB731A90047E83E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919A62711CB731A90047E83E /* Assets.xcassets */; };
+		919A62751CB731A90047E83E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919A62731CB731A90047E83E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		919A62651CB731A90047E83E /* collegian-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "collegian-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		919A62681CB731A90047E83E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		919A626A1CB731A90047E83E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		919A626C1CB731A90047E83E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		919A626F1CB731A90047E83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		919A62711CB731A90047E83E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		919A62741CB731A90047E83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		919A62761CB731A90047E83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		919A62621CB731A90047E83E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		919A625C1CB731A90047E83E = {
+			isa = PBXGroup;
+			children = (
+				919A62671CB731A90047E83E /* collegian-app */,
+				919A62661CB731A90047E83E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		919A62661CB731A90047E83E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				919A62651CB731A90047E83E /* collegian-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		919A62671CB731A90047E83E /* collegian-app */ = {
+			isa = PBXGroup;
+			children = (
+				919A62681CB731A90047E83E /* AppDelegate.swift */,
+				919A626A1CB731A90047E83E /* MasterViewController.swift */,
+				919A626C1CB731A90047E83E /* DetailViewController.swift */,
+				919A626E1CB731A90047E83E /* Main.storyboard */,
+				919A62711CB731A90047E83E /* Assets.xcassets */,
+				919A62731CB731A90047E83E /* LaunchScreen.storyboard */,
+				919A62761CB731A90047E83E /* Info.plist */,
+			);
+			path = "collegian-app";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		919A62641CB731A90047E83E /* collegian-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919A62791CB731A90047E83E /* Build configuration list for PBXNativeTarget "collegian-app" */;
+			buildPhases = (
+				919A62611CB731A90047E83E /* Sources */,
+				919A62621CB731A90047E83E /* Frameworks */,
+				919A62631CB731A90047E83E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "collegian-app";
+			productName = "collegian-app";
+			productReference = 919A62651CB731A90047E83E /* collegian-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		919A625D1CB731A90047E83E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Camille Santos";
+				TargetAttributes = {
+					919A62641CB731A90047E83E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 919A62601CB731A90047E83E /* Build configuration list for PBXProject "collegian-app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 919A625C1CB731A90047E83E;
+			productRefGroup = 919A62661CB731A90047E83E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				919A62641CB731A90047E83E /* collegian-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		919A62631CB731A90047E83E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919A62751CB731A90047E83E /* LaunchScreen.storyboard in Resources */,
+				919A62721CB731A90047E83E /* Assets.xcassets in Resources */,
+				919A62701CB731A90047E83E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		919A62611CB731A90047E83E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919A626D1CB731A90047E83E /* DetailViewController.swift in Sources */,
+				919A626B1CB731A90047E83E /* MasterViewController.swift in Sources */,
+				919A62691CB731A90047E83E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		919A626E1CB731A90047E83E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				919A626F1CB731A90047E83E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		919A62731CB731A90047E83E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				919A62741CB731A90047E83E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		919A62771CB731A90047E83E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		919A62781CB731A90047E83E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		919A627A1CB731A90047E83E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "collegian-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CS190.collegian-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		919A627B1CB731A90047E83E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "collegian-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CS190.collegian-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		919A62601CB731A90047E83E /* Build configuration list for PBXProject "collegian-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919A62771CB731A90047E83E /* Debug */,
+				919A62781CB731A90047E83E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919A62791CB731A90047E83E /* Build configuration list for PBXNativeTarget "collegian-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919A627A1CB731A90047E83E /* Debug */,
+				919A627B1CB731A90047E83E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 919A625D1CB731A90047E83E /* Project object */;
+}
