@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A6380741CC0118A00E94FD8 /* collegian-app-Briding-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "collegian-app-Briding-Header.h"; sourceTree = SOURCE_ROOT; };
 		428E325191A334BB0D66A18B /* Pods-collegian-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collegian-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-collegian-app/Pods-collegian-app.debug.xcconfig"; sourceTree = "<group>"; };
 		73F8D4D6915B262C584C92A5 /* Pods-collegian-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collegian-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-collegian-app/Pods-collegian-app.release.xcconfig"; sourceTree = "<group>"; };
 		8CD79BC1FAF621B36944760A /* Pods_collegian_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_collegian_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +73,7 @@
 		919A62671CB731A90047E83E /* collegian-app */ = {
 			isa = PBXGroup;
 			children = (
+				1A6380741CC0118A00E94FD8 /* collegian-app-Briding-Header.h */,
 				919A62681CB731A90047E83E /* AppDelegate.swift */,
 				919A626A1CB731A90047E83E /* MasterViewController.swift */,
 				919A626C1CB731A90047E83E /* DetailViewController.swift */,
@@ -126,6 +128,7 @@
 				TargetAttributes = {
 					919A62641CB731A90047E83E = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HLNTJPKV2C;
 					};
 				};
 			};
@@ -331,10 +334,14 @@
 			baseConfigurationReference = 428E325191A334BB0D66A18B /* Pods-collegian-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "collegian-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CS190.collegian-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -343,10 +350,14 @@
 			baseConfigurationReference = 73F8D4D6915B262C584C92A5 /* Pods-collegian-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "collegian-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CS190.collegian-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
