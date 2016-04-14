@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A6380741CC0118A00E94FD8 /* collegian-app-Briding-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "collegian-app-Briding-Header.h"; sourceTree = SOURCE_ROOT; };
+		1A6380741CC0118A00E94FD8 /* collegian-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "collegian-app-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		428E325191A334BB0D66A18B /* Pods-collegian-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collegian-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-collegian-app/Pods-collegian-app.debug.xcconfig"; sourceTree = "<group>"; };
 		73F8D4D6915B262C584C92A5 /* Pods-collegian-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collegian-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-collegian-app/Pods-collegian-app.release.xcconfig"; sourceTree = "<group>"; };
 		8CD79BC1FAF621B36944760A /* Pods_collegian_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_collegian_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +71,7 @@
 		919A62671CB731A90047E83E /* collegian-app */ = {
 			isa = PBXGroup;
 			children = (
-				1A6380741CC0118A00E94FD8 /* collegian-app-Briding-Header.h */,
+				1A6380741CC0118A00E94FD8 /* collegian-app-Bridging-Header.h */,
 				919A62681CB731A90047E83E /* AppDelegate.swift */,
 				91EF8E981CC0149300425ABC /* ViewController.swift */,
 				919A626E1CB731A90047E83E /* Main.storyboard */,
