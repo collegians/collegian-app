@@ -6,6 +6,7 @@ use_frameworks!
 target 'collegian-app' do
 
 pod 'MWFeedParser'
+pod 'KINWebBrowser'
 
 end
 
