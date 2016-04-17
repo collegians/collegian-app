@@ -84,8 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-collegian-app/ARChromeActivity.framework"
+  install_framework "Pods-collegian-app/KINWebBrowser.framework"
   install_framework "Pods-collegian-app/MWFeedParser.framework"
+  install_framework "Pods-collegian-app/TUSafariActivity.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-collegian-app/ARChromeActivity.framework"
+  install_framework "Pods-collegian-app/KINWebBrowser.framework"
   install_framework "Pods-collegian-app/MWFeedParser.framework"
+  install_framework "Pods-collegian-app/TUSafariActivity.framework"
 fi
