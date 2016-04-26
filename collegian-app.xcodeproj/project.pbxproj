@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F06CBBF1CD0029C00044273 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F06CBBE1CD0029C00044273 /* ArticleViewController.swift */; };
 		9103ADFE1CC0B9D80003F25C /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9103ADFD1CC0B9D80003F25C /* FeedTableViewController.swift */; };
 		9103AE001CC0BA080003F25C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9103ADFF1CC0BA080003F25C /* CoreData.framework */; };
 		919A62691CB731A90047E83E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A62681CB731A90047E83E /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		1A6380741CC0118A00E94FD8 /* collegian-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "collegian-app-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		3F06CBBE1CD0029C00044273 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		428E325191A334BB0D66A18B /* Pods-collegian-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collegian-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-collegian-app/Pods-collegian-app.debug.xcconfig"; sourceTree = "<group>"; };
 		73F8D4D6915B262C584C92A5 /* Pods-collegian-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collegian-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-collegian-app/Pods-collegian-app.release.xcconfig"; sourceTree = "<group>"; };
 		8CD79BC1FAF621B36944760A /* Pods_collegian_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_collegian_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 				9103ADFD1CC0B9D80003F25C /* FeedTableViewController.swift */,
 				919A62681CB731A90047E83E /* AppDelegate.swift */,
 				919A626E1CB731A90047E83E /* Main.storyboard */,
+				3F06CBBE1CD0029C00044273 /* ArticleViewController.swift */,
 				919A62711CB731A90047E83E /* Assets.xcassets */,
 				919A62731CB731A90047E83E /* LaunchScreen.storyboard */,
 				919A62761CB731A90047E83E /* Info.plist */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				919A62691CB731A90047E83E /* AppDelegate.swift in Sources */,
+				3F06CBBF1CD0029C00044273 /* ArticleViewController.swift in Sources */,
 				9103ADFE1CC0B9D80003F25C /* FeedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
