@@ -10,6 +10,11 @@
 		3F06CBBF1CD0029C00044273 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F06CBBE1CD0029C00044273 /* ArticleViewController.swift */; };
 		9103ADFE1CC0B9D80003F25C /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9103ADFD1CC0B9D80003F25C /* FeedTableViewController.swift */; };
 		9103AE001CC0BA080003F25C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9103ADFF1CC0BA080003F25C /* CoreData.framework */; };
+		9122580E1CD1BF5D00E5E3C7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122580D1CD1BF5D00E5E3C7 /* SWRevealViewController.m */; };
+		912258361CD1D8C800E5E3C7 /* NewsFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912258351CD1D8C800E5E3C7 /* NewsFeedTableViewController.swift */; };
+		912258381CD1D8F700E5E3C7 /* OpinionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912258371CD1D8F700E5E3C7 /* OpinionTableViewController.swift */; };
+		9122583A1CD1D96D00E5E3C7 /* CultureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912258391CD1D96D00E5E3C7 /* CultureTableViewController.swift */; };
+		9122583C1CD1D98A00E5E3C7 /* SportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122583B1CD1D98A00E5E3C7 /* SportsTableViewController.swift */; };
 		919A62691CB731A90047E83E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A62681CB731A90047E83E /* AppDelegate.swift */; };
 		919A62701CB731A90047E83E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919A626E1CB731A90047E83E /* Main.storyboard */; };
 		919A62721CB731A90047E83E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919A62711CB731A90047E83E /* Assets.xcassets */; };
@@ -25,6 +30,12 @@
 		8CD79BC1FAF621B36944760A /* Pods_collegian_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_collegian_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9103ADFD1CC0B9D80003F25C /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		9103ADFF1CC0BA080003F25C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9122580C1CD1BF5D00E5E3C7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		9122580D1CD1BF5D00E5E3C7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		912258351CD1D8C800E5E3C7 /* NewsFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedTableViewController.swift; sourceTree = "<group>"; };
+		912258371CD1D8F700E5E3C7 /* OpinionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpinionTableViewController.swift; sourceTree = "<group>"; };
+		912258391CD1D96D00E5E3C7 /* CultureTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CultureTableViewController.swift; sourceTree = "<group>"; };
+		9122583B1CD1D98A00E5E3C7 /* SportsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTableViewController.swift; sourceTree = "<group>"; };
 		919A62651CB731A90047E83E /* collegian-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "collegian-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		919A62681CB731A90047E83E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		919A626F1CB731A90047E83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +66,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9122580B1CD1BF1D00E5E3C7 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9122580C1CD1BF5D00E5E3C7 /* SWRevealViewController.h */,
+				9122580D1CD1BF5D00E5E3C7 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		912258341CD1D87100E5E3C7 /* FeedTableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9103ADFD1CC0B9D80003F25C /* FeedTableViewController.swift */,
+				912258351CD1D8C800E5E3C7 /* NewsFeedTableViewController.swift */,
+				912258371CD1D8F700E5E3C7 /* OpinionTableViewController.swift */,
+				912258391CD1D96D00E5E3C7 /* CultureTableViewController.swift */,
+				9122583B1CD1D98A00E5E3C7 /* SportsTableViewController.swift */,
+			);
+			name = FeedTableViewControllers;
+			sourceTree = "<group>";
+		};
 		919A625C1CB731A90047E83E = {
 			isa = PBXGroup;
 			children = (
@@ -77,13 +109,14 @@
 			isa = PBXGroup;
 			children = (
 				1A6380741CC0118A00E94FD8 /* collegian-app-Bridging-Header.h */,
-				9103ADFD1CC0B9D80003F25C /* FeedTableViewController.swift */,
 				919A62681CB731A90047E83E /* AppDelegate.swift */,
-				919A626E1CB731A90047E83E /* Main.storyboard */,
 				3F06CBBE1CD0029C00044273 /* ArticleViewController.swift */,
+				919A626E1CB731A90047E83E /* Main.storyboard */,
 				919A62711CB731A90047E83E /* Assets.xcassets */,
 				919A62731CB731A90047E83E /* LaunchScreen.storyboard */,
 				919A62761CB731A90047E83E /* Info.plist */,
+				912258341CD1D87100E5E3C7 /* FeedTableViewControllers */,
+				9122580B1CD1BF1D00E5E3C7 /* SWRevealViewController */,
 			);
 			path = "collegian-app";
 			sourceTree = "<group>";
@@ -222,7 +255,12 @@
 			files = (
 				919A62691CB731A90047E83E /* AppDelegate.swift in Sources */,
 				3F06CBBF1CD0029C00044273 /* ArticleViewController.swift in Sources */,
+				912258381CD1D8F700E5E3C7 /* OpinionTableViewController.swift in Sources */,
+				9122583A1CD1D96D00E5E3C7 /* CultureTableViewController.swift in Sources */,
+				9122583C1CD1D98A00E5E3C7 /* SportsTableViewController.swift in Sources */,
 				9103ADFE1CC0B9D80003F25C /* FeedTableViewController.swift in Sources */,
+				912258361CD1D8C800E5E3C7 /* NewsFeedTableViewController.swift in Sources */,
+				9122580E1CD1BF5D00E5E3C7 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
