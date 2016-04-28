@@ -2,7 +2,7 @@
 //  ArticleViewController.swift
 //  collegian-app
 //
-//  Created by student on 4/26/16.
+//  Created by Alan Kane on 4/26/16.
 //  Copyright © 2016 Camille Santos. All rights reserved.
 //
 

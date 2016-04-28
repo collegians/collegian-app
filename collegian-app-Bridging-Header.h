@@ -11,6 +11,7 @@
 
 #import "MWFeedParser.h"
 #import "KINWebBrowserViewController.h"
+#import "SWRevealViewController.h"
 
 
 #endif /* collegian_app_Bridging_Header_h */
