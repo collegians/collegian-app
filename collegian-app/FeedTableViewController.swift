@@ -87,15 +87,7 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let item = feedItems[indexPath.row] as MWFeedItem
-        
-        let webBrowser = KINWebBrowserViewController()
-        let url = NSURL(string: item.link)
-        
-        webBrowser.loadURL(url)
-        
-        self.navigationController?.pushViewController(webBrowser, animated: true)
-        
+                performSegueWithIdentifier("ArticleViewSegue", sender: self)
     }
 
     /*
@@ -133,14 +125,19 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "ArticleViewSegue" {
+            let articleViewController = segue.destinationViewController as! ArticleViewController
+            let tableView = view as! UITableView
+            let indexPath = tableView.indexPathForSelectedRow!
+            let item = feedItems[indexPath.row]
+            articleViewController.item = item
+        }
     }
-    */
 
 }
