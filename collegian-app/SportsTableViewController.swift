@@ -85,17 +85,35 @@ class SportsFeedTableViewController: UITableViewController, MWFeedParserDelegate
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("ArticleTableViewCell", forIndexPath: indexPath) as! ArticleTableViewCell
         
         // Configure the cell...
         let item = feedItems[indexPath.row] as MWFeedItem
-        cell.textLabel?.text = item.title
+        cell.titleLabel?.text = item.title
+        // Convert NSDate to String to display in UILabel
+        let date = item.date
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.FullStyle
+        let pubDate = dateFormatter.stringFromDate(date)
+        
+        cell.dateLabel?.text = pubDate
+        
         
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("ArticleViewSegue", sender: self)
+        
+        // performSegueWithIdentifier("ArticleViewSegue", sender: self)
+        
+        let item = feedItems[indexPath.row] as MWFeedItem
+        
+        let webBrowser = KINWebBrowserViewController()
+        let url = NSURL(string: item.link)
+        
+        webBrowser.loadURL(url)
+        
+        self.navigationController?.pushViewController(webBrowser, animated: true)
     }
     
     /*
