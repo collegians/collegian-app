@@ -15,10 +15,12 @@
 		912258381CD1D8F700E5E3C7 /* OpinionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912258371CD1D8F700E5E3C7 /* OpinionTableViewController.swift */; };
 		9122583A1CD1D96D00E5E3C7 /* CultureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912258391CD1D96D00E5E3C7 /* CultureTableViewController.swift */; };
 		9122583C1CD1D98A00E5E3C7 /* SportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122583B1CD1D98A00E5E3C7 /* SportsTableViewController.swift */; };
+		914824061CD2F4860099EA79 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914824051CD2F4860099EA79 /* MenuTableViewController.swift */; };
 		919A62691CB731A90047E83E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A62681CB731A90047E83E /* AppDelegate.swift */; };
 		919A62701CB731A90047E83E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919A626E1CB731A90047E83E /* Main.storyboard */; };
 		919A62721CB731A90047E83E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919A62711CB731A90047E83E /* Assets.xcassets */; };
 		919A62751CB731A90047E83E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919A62731CB731A90047E83E /* LaunchScreen.storyboard */; };
+		91B1CDA51CD2830F00F09D4F /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1CDA41CD2830F00F09D4F /* ArticleTableViewCell.swift */; };
 		A511C2A5A98FA1877AC06BE9 /* Pods_collegian_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD79BC1FAF621B36944760A /* Pods_collegian_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,12 +38,14 @@
 		912258371CD1D8F700E5E3C7 /* OpinionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpinionTableViewController.swift; sourceTree = "<group>"; };
 		912258391CD1D96D00E5E3C7 /* CultureTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CultureTableViewController.swift; sourceTree = "<group>"; };
 		9122583B1CD1D98A00E5E3C7 /* SportsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTableViewController.swift; sourceTree = "<group>"; };
+		914824051CD2F4860099EA79 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		919A62651CB731A90047E83E /* collegian-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "collegian-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		919A62681CB731A90047E83E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		919A626F1CB731A90047E83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		919A62711CB731A90047E83E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		919A62741CB731A90047E83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		919A62761CB731A90047E83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91B1CDA41CD2830F00F09D4F /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				1A6380741CC0118A00E94FD8 /* collegian-app-Bridging-Header.h */,
 				919A62681CB731A90047E83E /* AppDelegate.swift */,
 				3F06CBBE1CD0029C00044273 /* ArticleViewController.swift */,
+				91B1CDA41CD2830F00F09D4F /* ArticleTableViewCell.swift */,
+				914824051CD2F4860099EA79 /* MenuTableViewController.swift */,
 				919A626E1CB731A90047E83E /* Main.storyboard */,
 				919A62711CB731A90047E83E /* Assets.xcassets */,
 				919A62731CB731A90047E83E /* LaunchScreen.storyboard */,
@@ -165,7 +171,7 @@
 				TargetAttributes = {
 					919A62641CB731A90047E83E = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = HLNTJPKV2C;
+						DevelopmentTeam = F49MGEXSEL;
 					};
 				};
 			};
@@ -254,6 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				919A62691CB731A90047E83E /* AppDelegate.swift in Sources */,
+				91B1CDA51CD2830F00F09D4F /* ArticleTableViewCell.swift in Sources */,
+				914824061CD2F4860099EA79 /* MenuTableViewController.swift in Sources */,
 				3F06CBBF1CD0029C00044273 /* ArticleViewController.swift in Sources */,
 				912258381CD1D8F700E5E3C7 /* OpinionTableViewController.swift in Sources */,
 				9122583A1CD1D96D00E5E3C7 /* CultureTableViewController.swift in Sources */,
@@ -381,7 +389,7 @@
 				INFOPLIST_FILE = "collegian-app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "CS190.collegian-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.collegians.collegian-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "collegian-app-Bridging-Header.h";
@@ -399,7 +407,7 @@
 				INFOPLIST_FILE = "collegian-app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "CS190.collegian-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.collegians.collegian-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "collegian-app-Bridging-Header.h";
