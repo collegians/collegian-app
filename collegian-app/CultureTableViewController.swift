@@ -11,6 +11,7 @@ import UIKit
 class CultureFeedTableViewController: UITableViewController, MWFeedParserDelegate {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet var tableview: UITableView!
     
     var feedItems = [MWFeedItem]()
     
@@ -43,6 +44,8 @@ class CultureFeedTableViewController: UITableViewController, MWFeedParserDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableview.rowHeight = UITableViewAutomaticDimension
+        
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
@@ -70,8 +73,8 @@ class CultureFeedTableViewController: UITableViewController, MWFeedParserDelegat
     
     // MARK: - Table view data source
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 100
+    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -87,16 +90,27 @@ class CultureFeedTableViewController: UITableViewController, MWFeedParserDelegat
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ArticleTableViewCell", forIndexPath: indexPath) as! ArticleTableViewCell
         
-        // Configure the cell...
         let item = feedItems[indexPath.row] as MWFeedItem
+        
         cell.titleLabel?.text = item.title
+        
         // Convert NSDate to String to display in UILabel
         let date = item.date
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.FullStyle
         let pubDate = dateFormatter.stringFromDate(date)
-        
         cell.dateLabel?.text = pubDate
+        
+        cell.authorLabel?.text = item.author
+        
+        // Remove html characters from description feed item
+        var summary = item.summary
+        summary = summary.stringByReplacingOccurrencesOfString("&#124;", withString: "|")
+        summary = summary.stringByReplacingOccurrencesOfString("&#8220;", withString: "\"")
+        summary = summary.stringByReplacingOccurrencesOfString("&#8221;", withString: "\"")
+        summary = summary.stringByReplacingOccurrencesOfString("&#8217;", withString: "'")
+        summary = summary.stringByReplacingOccurrencesOfString("&#8230;", withString: "...\n")
+        cell.summaryLabel?.text = summary
         
         
         return cell
