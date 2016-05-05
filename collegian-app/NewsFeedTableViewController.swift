@@ -91,16 +91,27 @@ class NewsFeedTableViewController: UITableViewController, MWFeedParserDelegate {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ArticleTableViewCell", forIndexPath: indexPath) as! ArticleTableViewCell
         
-        // Configure the cell...
         let item = feedItems[indexPath.row] as MWFeedItem
+        
         cell.titleLabel?.text = item.title
+        
         // Convert NSDate to String to display in UILabel
         let date = item.date
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.FullStyle
         let pubDate = dateFormatter.stringFromDate(date)
-        
         cell.dateLabel?.text = pubDate
+        
+        cell.authorLabel?.text = item.author
+        
+        // Remove html characters from description feed item
+        var summary = item.summary
+        summary = summary.stringByReplacingOccurrencesOfString("&#124;", withString: "|")
+        summary = summary.stringByReplacingOccurrencesOfString("&#8220;", withString: "\"")
+        summary = summary.stringByReplacingOccurrencesOfString("&#8221;", withString: "\"")
+        summary = summary.stringByReplacingOccurrencesOfString("&#8217;", withString: "'")
+        summary = summary.stringByReplacingOccurrencesOfString("&#8230;", withString: "...\n")
+        cell.summaryLabel?.text = summary
         
         
         return cell
