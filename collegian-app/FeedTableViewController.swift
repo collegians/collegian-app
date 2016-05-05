@@ -11,6 +11,7 @@ import UIKit
 class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet var tableview: UITableView!
     
     var feedItems = [MWFeedItem]()
     
@@ -44,6 +45,8 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableview.rowHeight = UITableViewAutomaticDimension
+        
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
@@ -71,8 +74,8 @@ class FeedTableViewController: UITableViewController, MWFeedParserDelegate {
 
     // MARK: - Table view data source
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 100
+    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
