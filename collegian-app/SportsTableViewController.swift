@@ -118,16 +118,16 @@ class SportsFeedTableViewController: UITableViewController, MWFeedParserDelegate
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        // performSegueWithIdentifier("ArticleViewSegue", sender: self)
+         performSegueWithIdentifier("ArticleViewSegue", sender: self)
         
-        let item = feedItems[indexPath.row] as MWFeedItem
-        
-        let webBrowser = KINWebBrowserViewController()
-        let url = NSURL(string: item.link)
-        
-        webBrowser.loadURL(url)
-        
-        self.navigationController?.pushViewController(webBrowser, animated: true)
+//        let item = feedItems[indexPath.row] as MWFeedItem
+//        
+//        let webBrowser = KINWebBrowserViewController()
+//        let url = NSURL(string: item.link)
+//        
+//        webBrowser.loadURL(url)
+//        
+//        self.navigationController?.pushViewController(webBrowser, animated: true)
     }
     
     /*
