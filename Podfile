@@ -7,6 +7,8 @@ target 'collegian-app' do
 
 pod 'MWFeedParser'
 pod 'KINWebBrowser'
+pod 'Kanna'
+pod 'Alamofire'
 
 end
 
