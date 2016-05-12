@@ -16,14 +16,13 @@ class ArticleViewController: UIViewController {
     
     var item: MWFeedItem! = nil
 
-    @IBOutlet weak var articleText: UITextView!
     @IBOutlet weak var htmlView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        titleLabel.text = item.author
         
+        self.automaticallyAdjustsScrollViewInsets=false;
         
         Alamofire.request(.GET, item.link)
             .validate()
@@ -40,6 +39,10 @@ class ArticleViewController: UIViewController {
                         }
                         htmlString+="<body>"
                         
+                        for articleTitle in doc.css("h1.title") {
+                            htmlString += articleTitle.toHTML!
+                        }
+                        
                         for section in doc.css(".entry") {
                             htmlString += section.toHTML!
                         }
@@ -55,8 +58,19 @@ class ArticleViewController: UIViewController {
                 }
                 
         }
-
+        let shareButton:UIBarButtonItem = UIBarButtonItem(title: "Share", style: .Plain, target: self, action: #selector(self.share))
         
+        self.navigationItem.setRightBarButtonItem(shareButton, animated: true)
+        
+    }
+    
+    func share(){
+        displayShareSheet(item.link)
+    }
+    
+    func displayShareSheet(shareContent:String) {
+        let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString], applicationActivities: nil)
+        presentViewController(activityViewController, animated: true, completion: {})
     }
 
     override func didReceiveMemoryWarning() {
